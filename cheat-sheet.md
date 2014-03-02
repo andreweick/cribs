@@ -1,12 +1,3 @@
-Shell
------
-| **Command**         | ***Function***    |  
-| ------------------- | ----------------- |  
-| !!                  | Run last command  |  
-| sudo !!             | sudo last command |  
-| mv flame.{old,new}  | rename extension  |  
-| cp fname.txt{,.bak} | copy file to .bak |  
-
 Personal Shortcuts
 ------------------
 | **Keyboard Shortcut** | ***Function***                         |  
@@ -54,7 +45,7 @@ Sublime
 | ^ SHIFT M                            | Select contents in parentheses     |  
 | ⌘ KK                               | Delete from cursor to end of line  |  
 | ⌘ ]                                | Indent current lines               |  
-| ⌘ [                                | Outdent current line               |  
+| ⌘ \[                                | Outdent current line               |  
 | ⌘ /                                | Comment current line               |  
 | ⌘ ⌥ /                            | Block comment current selection    |  
 | ⌘ shift V                          | Paste and indent correctly         |  
@@ -72,12 +63,13 @@ Sublime
 | ⌘ ⌥ 2                            | Split view into two columns        |  
 | ⌘ ⌥ 1                            | Revert view to single column       |  
 | ⌘ ⌥ 5                            | Set view to grid                   |  
-| PlainTasks                                                               ||  
+| **PlainTasks**                                                             ||  
 | ⌘ i                                | add new task                       |  
 | ⌘ d                                | mark task as done                  |  
 | ⌘ shift A                          | archive task as done               |  
 | ⌘ shift p, task, Task:New Document | To start a new list                |  
-
+| **Pretty Print JSON** ||
+| ^ ⌘ j | Prettify JSON |
 
 
 
@@ -94,3 +86,13 @@ Typography
 | ⌥ ⇧ ]             | Right Single Quote | &rsquo;    |  
 | ⌥ \[                | Left Double Quote  | &ldquo;    |  
 | ⌥ ⇧ \]            | Right Double Quote | &rdquo;    |  
+
+Shell
+-----
+| **Command**         | ***Function***    |  
+| ------------------- | ----------------- |  
+| !!                  | Run last command  |  
+| sudo !!             | sudo last command |  
+| mv flame.{old,new}  | rename extension  |  
+| cp fname.txt{,.bak} | copy file to .bak |  
+
