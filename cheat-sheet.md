@@ -2,14 +2,15 @@ Personal Shortcuts
 ------------------
 | **Keyboard Shortcut** | ***Function***                         |  
 | --------------------- | -------------------------------------- |  
-| ^+⇧+L               | Leave for day                          |  
-| ^+⇧+S               | Activate screensaver                   |  
+| ^+⇧+S               | Leave for day                          |  
+| ^+⇧+                | Lock terminal                          |  
 | ⌥+V                 | Type pasteboard (KM)                   |  
+| ⌃+⌘+/             | launch selected URL in browser         |  
 | ⌘                   | command key                            |  
 | ⌃                   | control key                            |  
 | ⌥                   | option key                             |  
-| ⌃⌥⌘ H           | open current safari tab in chrome (KM) |
-| ⌥ ⌘ V               | Finder move file                       |
+| ⌃⌥⌘ H           | open current safari tab in chrome (KM) |  
+| ⌥ ⌘ V             | Finder move file                       |  
 
 iTerm2
 ------
