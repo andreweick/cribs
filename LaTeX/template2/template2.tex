@@ -1,0 +1,37 @@
+% please run xelatex instead of pdflatex to get the opacity working correctly!
+% please run the program at least twice (xelatex) to get desired result.
+\documentclass[letterpaper]{article}
+\usepackage[margin=0.5in,landscape,includefoot,nomarginpar]{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{pdfpages}
+\usepackage[pages=all,placement=center]{background}
+\backgroundsetup{%
+  scale=1,        %% change accordingly
+  angle=0,        %% change accordingly
+  opacity=.15,    %% change accordingly
+  %color =black,  %% change accordingly
+  contents=
+  {\begin{tikzpicture}
+  \node at (current page.center)[remember picture,overlay]
+    {\includegraphics[width=.45\textwidth]{mf_logo_onecolor}
+      \hspace*{.1\textwidth}
+    \includegraphics[width=.45\textwidth]{mf_logo_onecolor}};
+    \node at (current page.center)[remember picture,overlay,yshift=-9.75cm]
+	{\color{black}MISSIONFOCUS.COM $\vert$ 100 DAINGERFIELD ROAD, SUITE 400, ALEXANDRIA, VA 22314};
+  \end{tikzpicture}}
+}
+
+\fancypagestyle{mytemplatestyle}{%
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[C]{\color{gray}MISSIONFOCUS.COM $\vert$ 100 DAINGERFIELD ROAD, SUITE 400, ALEXANDRIA, VA 22314}
+\renewcommand{\headrulewidth}{0pt}
+} 
+%\pagestyle{mytemplatestyle}
+\pagestyle{empty}
+
+
+\begin{document}
+This is a blank page but some text must be entered to get the .pdf from .tex!
+\end{document}

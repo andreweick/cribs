@@ -1,0 +1,90 @@
+\documentclass{article}
+\usepackage[paperheight=5in,paperwidth=3in,margin=8mm,landscape,noheadfoot]{geometry}
+\usepackage{amsmath}
+\usepackage[table]{xcolor}    % loads also »colortbl«
+\usepackage{tabularx}
+\usepackage[scaled]{helvet}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+\usepackage{anyfontsize}
+\usepackage{menukeys}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\usepackage{setspace}
+\renewcommand{\normalsize}{\fontsize{8}{9.5}\selectfont}
+\arrayrulecolor{gray!50}
+\setlength{\arrayrulewidth}{0.6pt}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\sloppy
+
+
+\begin{document}
+\pagestyle{empty}
+{\onehalfspacing
+\rowcolors{2}{gray!12.5}{white}	%% start alternating shades from 2nd row
+\begin{tabularx}{\textwidth}{|X|X|X|}
+ \rowcolor{gray!50}
+ \textbf{Sublime}				&\textbf{Shell}			&\textbf{Shortcut}\\\arrayrulecolor{gray}\hline
+ \cmd +P Goto Anything			&!! Run last command	&$\wedge$+\shift+L Leave\\\arrayrulecolor{gray!50}\hline
+ \cmd +\shift +P Palette		&sudo !!				&$\wedge$+\shift+S Screen\\\hline
+ \cmd +K \cmd +B Sidebar	 	&mv fname.\{old,new\}	&\Alt +V w/o style\\\hline
+ \cmd +$\wedge$+F Full Screen	&cp fname.txt\{,.bak\}	&\\\hline
+ \cmd +\shift +V Paste/indent	&						&\\\hline
+\end{tabularx}
+}
+\clearpage		%%to end current page here and start a new page
+Keyboard:\\
+\setlength{\tabcolsep}{0pt}
+\begin{tabular}{P{10mm}l}
+\cmd		&command\\
+$\wedge$	&control\\
+\Alt		&option\\
+Shell		&
+\end{tabular}
+
+\medskip
+Sublime\\
+\begin{tabular}{P{22mm}l}
+\cmd +P				&Goto Anything\\
+\cmd +\shift +P		&Palette\\
+\cmd +K \cmd +B		&Sidebar\\
+\cmd\ $\wedge$ F	&Full Screen\\
+\cmd\ \shift\ V		&Paste no indent
+\end{tabular}
+
+\bigskip
+
+\# ssh user\@host cat /path/to/remotefile | diff /path/to/localfile -\\
+\# du -s * | sort -nr | head
+
+\clearpage
+Typography\\
+\begin{tabular}{P{17mm}l}
+\Alt\  - 		&En Dash (\&ndash;)\\
+\Alt\ \shift\ -	&Em Dash (\&mdash;)\\
+\Alt\ 8			&Bullet (\&bull;)\\
+\Alt\ ;			&Elipses (\&hellips;)\\
+\Alt\ g			&Copyright (\&copy;)\\
+\Alt\ ]			&Left Single Quote (\&lsquo;)\\
+\Alt\ \shift\ ]	&Right Single Quote (\&rsquo;)\\
+\Alt\ [			&Left Double Quote (\&ldquo;)\\
+\Alt\ \shift\ ]	&Right Double Quote (\&rdquo;)
+\end{tabular}
+
+\medskip
+iTerm2\\
+\begin{tabular}{P{24mm}l}
+\cmd\ \Alt\ arrow	&got to split pane by direction\\
+\cmd\ D				&split window horizontally\\
+\cmd\ d				&split window vertically\\
+\cmd\ M				&set mark\\
+\cmd\ J				&jump to mark
+\end{tabular}
+
+\clearpage
+
+[C-M]+e \# That's Ctrl + Meta + e. This will expand any history 
+references you make (like !-5\$) so you can check before running.
+
+$\wedge$\ \Alt\ \cmd\ H --- open current safari window in a new chrome browser
+\end{document}
